@@ -37,7 +37,7 @@ namespace Crud_Asp.net
 
             //injetando dependecias para realizar a conexao do BD Sql
             services.AddDbContext<EmpregadoContexto>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DevConexao")));
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -11,6 +11,11 @@ namespace Crud_Asp.net.Models
         //conexao com BD feita para os empregados
         public EmpregadoContexto(DbContextOptions<EmpregadoContexto> options) : base(options)
         {
+
         }
+
+        //utilizando o contexto do Bd para gerar a tabela de usuario
+        public DbSet<Empregado> Empregado { get; set; }
+
     }
 }
