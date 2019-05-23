@@ -45,7 +45,12 @@ namespace Crud_Asp.net.Controllers
         // GET: Empregado/Create
         public IActionResult AddOrEdit(int id=0)
         {
-            return View(new Empregado());
+            //testando se e para inserir ou editar
+            if(id == 0 )
+                return View(new Empregado());
+            else
+                return View(_context.Empregado.Find(id));
+
         }
 
         // POST: Empregado/Create
@@ -57,7 +62,12 @@ namespace Crud_Asp.net.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(empregado);
+                //verificando se e para salvar ou atualizar os dados
+                if(empregado.EmpregadoId == 0)
+                    _context.Add(empregado);
+                else
+                    _context.Update(empregado);
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -118,6 +128,14 @@ namespace Crud_Asp.net.Controllers
         // GET: Empregado/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            var empregado = await _context.Empregado.FindAsync(id);
+            _context.Empregado.Remove(empregado);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+            /*
+             * metodo antigo para deletar enviando para outra pagina mostrando os dados antes de deletar*
             if (id == null)
             {
                 return NotFound();
@@ -131,6 +149,7 @@ namespace Crud_Asp.net.Controllers
             }
 
             return View(empregado);
+            */
         }
 
         // POST: Empregado/Delete/5
