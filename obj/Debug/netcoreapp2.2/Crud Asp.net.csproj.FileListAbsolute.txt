@@ -58,3 +58,8 @@ C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Crud Asp.
 C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Crud Asp.net.dll
 C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Crud Asp.net.pdb
 C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Crud Asp.net.csproj.CopyComplete
+C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Razor\Views\Empregado\Delete.g.cshtml.cs
+C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Razor\Views\Empregado\Details.g.cshtml.cs
+C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Razor\Views\Empregado\Edit.g.cshtml.cs
+C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Razor\Views\Empregado\Index.g.cshtml.cs
+C:\Users\Acer\Desktop\.NET dotNet\Crud-Asp.net\obj\Debug\netcoreapp2.2\Razor\Views\Empregado\AddOrEdit.g.cshtml.cs
